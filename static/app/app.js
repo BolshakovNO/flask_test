@@ -22,3 +22,9 @@ function addChart(data) {
 function sendTask(url) {
 
 }
+
+//var socket = io.connect("http://localhost:5000/tail");
+//socket.emit("subscribe");
+//socket.on("tail-message", function(data) {
+//  $(".log-output").append(data);
+//});
