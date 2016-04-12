@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chart</title>
+
+    <style>
+        #piechart {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+
+    <!-- JQuery -->
+    <script src="../static/js/jquery.js" type="application/javascript"></script>
+    <script src="../static/js/jquery.flot.js" type="application/javascript"></script>
+    <script src="../static/js/jquery.flot.pie.js" type="application/javascript"></script>
+
+    <!-- Bootstrap -->
+    <link href="../static/bootstrap/css/bootstrap.min.css"/>
+    <script src="../static/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="row" id="piechart"></div>
+    <script>
+        var data = [
+            { label: "Internet Explorer",  data: 12},
+            { label: "Mobile",  data: 27},
+            { label: "Safari",  data: 85},
+            { label: "Opera",  data: 64},
+            { label: "Firefox",  data: 90},
+            { label: "Chrome",  data: 112}
+        ];
+
+        $.plot($("#piechart"), data,
+        {
+            series: {
+                pie: {
+                    show: true
+                }
+            },
+            grid: {
+                hoverable: true,
+                clickable: true
+            },
+            legend: {
+                show: false
+            },
+            colors: ["#FA5833", "#2FABE9", "#FABB3D", "#78CD51"]
+        });
+    </script>
+
+</body>
+</html>
