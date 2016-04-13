@@ -4,15 +4,8 @@
     <meta charset="UTF-8">
     <title>Chart</title>
 
-    <style>
-        #piechart {
-            width: 500px;
-            height: 500px;
-        }
-    </style>
-
     <!-- JQuery -->
-    <script src="/static/js/jquery.js" type="application/javascript"></script>
+    <script src="/static/js/jquery-1.12.3.min.js" type="application/javascript"></script>
     <script src="/static/js/jquery.flot.js" type="application/javascript"></script>
     <script src="/static/js/jquery.flot.pie.js" type="application/javascript"></script>
 
@@ -25,9 +18,18 @@
 
     <!-- App -->
     <script src="/static/app/app.js" type="application/javascript"></script>
+    <link href="/static/app/css/styles.css" rel="stylesheet"/>
 
 </head>
 <body>
-    <div class="row" id="piechart"></div>
+    <div class="container">
+        <div class="input-group">
+          <input type="text" class="form-control" id="text" onkeypress="onEnterKeyPress()">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button" onclick="sendTask()">Go!</button>
+          </span>
+        </div>
+        <div class="row" id="parent-chart-container"></div>
+    </div>
 </body>
 </html>

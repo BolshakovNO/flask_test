@@ -13,5 +13,9 @@ def show():
 
 
 @url_parser.route('/parse', methods=['POST'])
-def parse(*args, **kwargs):
+def parse_handler(*args, **kwargs):
     return 'success'
+
+
+def parse_url(url):
+    pass

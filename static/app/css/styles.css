@@ -1,0 +1,12 @@
+body {
+    margin: 10px;
+}
+
+.chart-container {
+    width:600px;
+    height:380px;
+    opacity: 0;
+
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
