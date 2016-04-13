@@ -5,20 +5,20 @@
     <title>Chart</title>
 
     <!-- JQuery -->
-    <script src="/static/js/jquery-1.12.3.min.js" type="application/javascript"></script>
-    <script src="/static/js/jquery.flot.js" type="application/javascript"></script>
-    <script src="/static/js/jquery.flot.pie.js" type="application/javascript"></script>
+    <script src="{{ url_for('static', filename='js/jquery-1.12.3.min.js') }}" type="application/javascript"></script>
+    <script src="{{ url_for('static', filename='js/jquery.flot.js') }}" type="application/javascript"></script>
+    <script src="{{ url_for('static', filename='js/jquery.flot.pie.js') }}" type="application/javascript"></script>
 
     <!-- Bootstrap -->
-    <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="/static/bootstrap/js/bootstrap.min.js" type="application/javascript"></script>
+    <link href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"/>
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}" type="application/javascript"></script>
 
     <!-- Socket.io -->
-    <script src="/static/js/socket.io-1.4.5.js" type="application/javascript"></script>
+    <script src="{{ url_for('static', filename='js/socket.io-1.4.5.js') }}" type="application/javascript"></script>
 
     <!-- App -->
-    <script src="/static/app/app.js" type="application/javascript"></script>
-    <link href="/static/app/css/styles.css" rel="stylesheet"/>
+    <script src="{{ url_for('static', filename='app/app.js') }}" type="application/javascript"></script>
+    <link href="{{ url_for('static', filename='app/css/styles.css') }}" rel="stylesheet"/>
 
 </head>
 <body>
