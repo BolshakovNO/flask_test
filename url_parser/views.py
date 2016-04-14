@@ -5,8 +5,7 @@ from . import celery, app
 
 url_parser = Blueprint(
     'url_parser', __name__,
-    template_folder=app.config['TEMPLATES_FOLDER'],
-    static_folder=app.config['STATIC_FOLDER']
+    template_folder=app.config['TEMPLATES_FOLDER']
 )
 
 
@@ -19,6 +18,7 @@ def show():
 def parse_handler(*args, **kwargs):
 
     return 'success'
+
 
 @celery.task()
 def parse_url(url):

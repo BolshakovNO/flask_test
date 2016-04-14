@@ -1,10 +1,13 @@
 # coding: utf-8
+import os
+
 from celery import Celery
-from flask import Flask
+from flask import Flask, send_from_directory
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 app.config.from_object('settings')
+app._static_folder = app.config['STATIC_FOLDER']
 
 
 def make_celery(app):
