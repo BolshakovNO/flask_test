@@ -9,9 +9,7 @@ DEBUG = True
 REDIS_HOST = '127.0.0.1'
 REDIS_PORT = 6379
 
-BROKER_URL = 'redis://{}:{}'.format(REDIS_HOST, REDIS_PORT)
-
-CHANEL_NAME = 'parse'
+BROKER_URL = 'redis://{}:{}/0'.format(REDIS_HOST, REDIS_PORT)
 
 # Enable protection agains *Cross-site Request Forgery (CSRF)*
 CSRF_ENABLED = True
@@ -24,4 +22,5 @@ CSRF_SESSION_KEY = "asdqeqwewqedsafdagrwgrbfx"
 SECRET_KEY = "asdasdadvdsvfdabxgdqdsedsafcd"
 
 # DB
-
+DB_NAME = 'tasks'
+COMPLETED_TABLE = 'completed'

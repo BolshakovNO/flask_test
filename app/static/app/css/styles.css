@@ -10,3 +10,17 @@ body {
     transition-duration: 0.5s;
     transition-timing-function: linear;
 }
+
+.url-text {
+    margin-top: 10px;
+}
+
+.input-group {
+    width: 300px;
+    margin: 0 auto;
+    float: none;
+}
+
+#error-container {
+    color: red;
+}
