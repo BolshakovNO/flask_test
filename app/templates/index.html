@@ -22,6 +22,25 @@
 
 </head>
 <body>
+    <div id="modal" class="modal hide fade">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h2>Bolshakov Nikita</h2>
+        </div>
+        <div class="modal-body">
+            <p>Knowledge:</p>
+            <ul>
+                <li>Python</li>
+                <li>Django</li>
+                <li>MySQL</li>
+                <li>*nix</li>
+                <li>JS</li>
+                <li>Sencha ExtJS</li>
+            </ul>
+        </div>
+    </div>
+
+    <a class='about' onclick="showModal()">About</a>
     <div class="container">
         <div class="input-group">
           <input type="text" class="form-control" id="text" onkeypress="onEnterKeyPress()">

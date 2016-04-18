@@ -63,6 +63,22 @@ function setErrorText(text) {
     $('#error-container').text(text);
 }
 
+function showModal() {
+    var win = $('#modal');
+    win.removeClass('hide');
+    win.modal();
+}
+
+function showAbout(show) {
+    var about = $('#about-container');
+
+    if (show) {
+        about.removeClass('hide');
+    } else {
+        about.addClass('hide');
+    }
+}
+
 var socket = io.connect(window.location.href);
 
 socket.on('parse_complete', addChart);
